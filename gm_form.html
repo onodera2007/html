@@ -1,12 +1,6 @@
 <html>
   <body>
     <form>
-      <label for="player_uid">玩家的UID:</label>
-      <input type="number" id="player_uid" name="player_uid" /><br>
-      
-      <label for="token">Token密钥:</label>
-      <input type="text" id="token" name="token" /><br>
-      
       <label for="drive">驱动盘</label>
       <select id="drive" name="drive">
         <option value="310">啄木鸟电音</option>
@@ -289,6 +283,14 @@
         }
       }
     </script>
-    <input type="submit" />
+    <form>
+      <label for="player_uid">玩家的UID:</label>
+      <input type="number" id="player_uid" name="player_uid" /><br>
+      <label for="token">Token密钥:</label>
+      <input type="text" id="token" name="token" /><br>
+      <label for="command">指令:</label>
+      <input type="text" id="command" name="command" />
+      <input type="submit" />
+    </form>
   </body>
 </html>
