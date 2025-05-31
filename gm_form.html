@@ -1,0 +1,294 @@
+<html>
+  <body>
+    <form>
+      <label for="player_uid">玩家的UID:</label>
+      <input type="number" id="player_uid" name="player_uid" /><br>
+      
+      <label for="token">Token密钥:</label>
+      <input type="text" id="token" name="token" /><br>
+      
+      <label for="drive">驱动盘</label>
+      <select id="drive" name="drive">
+        <option value="310">啄木鸟电音</option>
+        <option value="311">河豚电音</option>
+        <option value="312">震星迪斯科</option>
+        <option value="313">自由蓝调</option>
+        <option value="314">激素朋克</option>
+        <option value="315">灵魂摇滚</option>
+        <option value="316">摇摆爵士</option>
+        <option value="318">混沌爵士</option>
+        <option value="319">原始朋克</option>
+        <option value="322">炎狱重金属</option>
+        <option value="323">混沌重金属</option>
+        <option value="324">雷暴重金属</option>
+        <option value="325">极地重金属</option>
+        <option value="326">獠牙重金属</option>
+        <option value="327">折枝剑歌</option>
+        <option value="328">静听嘉音</option>
+        <option value="329">如影相随</option>
+        <option value="330">法厄同之歌</option>
+        <option value="331">KING OF THE SUMMIT</option>
+        <option value="332">YUNKUI TALES</option>
+      </select><br>
+      
+      <label for="drive_rarity">驱动盘稀有度</label>
+      <select id="drive_rarity" name="drive_rarity">
+        <option value="2">B</option>
+        <option value="3">A</option>
+        <option value="4">S</option>
+      </select><br>
+      
+      <label for="drive_level">驱动盘等级</label>
+      <select id="drive_level" name="drive_level">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+      </select><br>
+      
+      <label for="drive_number">驱动盘盘号</label>
+      <select id="drive_number" name="drive_number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select><br>
+      
+      <label for="Main_stat">主属性</label>
+      <select id="Main_stat" name="Main_stat">
+        <option value="HP">生命</option>
+        <option value="ATK">攻击</option>
+        <option value="DEF">防御</option>
+        <option value="HP%">生命%</option>
+        <option value="ATK%">攻击%</option>
+        <option value="DEF%">防御%</option>
+        <option value="PEN%">穿透率</option>
+        <option value="AM">异常掌控</option>
+        <option value="AP">异常精通</option>
+        <option value="CD">暴击伤害</option>
+        <option value="CR">暴击率</option>
+        <option value="ER">能量自动恢复</option>
+        <option value="I">冲击</option>
+        <option value="El">电</option>
+        <option value="Et">以太</option>
+        <option value="Fi">火</option>
+        <option value="Ic">冰</option>
+        <option value="Ph">物理</option>
+      </select><br>
+      
+      <label for="Sub_stat1">副属性1</label>
+      <select id="Sub_stat1" name="Sub_stat1">
+        <option value="HP">生命</option>
+        <option value="ATK">攻击</option>
+        <option value="DEF">防御</option>
+        <option value="HP%">生命%</option>
+        <option value="ATK%">攻击%</option>
+        <option value="DEF%">防御%</option>
+        <option value="PEN">穿透值</option>
+        <option value="AP">异常精通</option>
+        <option value="CD">暴击伤害</option>
+        <option value="CR">暴击率</option>
+      </select>
+      <label for="Sub_level1">副属性等级1</label>
+      <select id="Sub_level1" name="Sub_level1">
+        <option value="1">0</option>
+        <option value="2">1</option>
+        <option value="3">2</option>
+        <option value="4">3</option>
+        <option value="5">4</option>
+        <option value="6">5</option>
+      </select><br>
+      
+      <label for="Sub_stat2">副属性2</label>
+      <select id="Sub_stat2" name="Sub_stat2">
+        <option value="HP">生命</option>
+        <option value="ATK">攻击</option>
+        <option value="DEF">防御</option>
+        <option value="HP%">生命%</option>
+        <option value="ATK%">攻击%</option>
+        <option value="DEF%">防御%</option>
+        <option value="PEN">穿透值</option>
+        <option value="AP">异常精通</option>
+        <option value="CD">暴击伤害</option>
+        <option value="CR">暴击率</option>
+      </select>
+      <label for="Sub_level2">副属性等级2</label>
+      <select id="Sub_level2" name="Sub_level2">
+        <option value="1">0</option>
+        <option value="2">1</option>
+        <option value="3">2</option>
+        <option value="4">3</option>
+        <option value="5">4</option>
+        <option value="6">5</option>
+      </select><br>
+      
+      <label for="Sub_stat3">副属性3</label>
+      <select id="Sub_stat3" name="Sub_stat3">
+        <option value="HP">生命</option>
+        <option value="ATK">攻击</option>
+        <option value="DEF">防御</option>
+        <option value="HP%">生命%</option>
+        <option value="ATK%">攻击%</option>
+        <option value="DEF%">防御%</option>
+        <option value="PEN">穿透值</option>
+        <option value="AP">异常精通</option>
+        <option value="CD">暴击伤害</option>
+        <option value="CR">暴击率</option>
+      </select>
+      <label for="Sub_level3">副属性等级3</label>
+      <select id="Sub_level3" name="Sub_level3">
+        <option value="1">0</option>
+        <option value="2">1</option>
+        <option value="3">2</option>
+        <option value="4">3</option>
+        <option value="5">4</option>
+        <option value="6">5</option>
+      </select><br>
+      
+      <label for="Sub_stat4">副属性4</label>
+      <select id="Sub_stat4" name="Sub_stat4">
+        <option value="HP">生命</option>
+        <option value="ATK">攻击</option>
+        <option value="DEF">防御</option>
+        <option value="HP%">生命%</option>
+        <option value="ATK%">攻击%</option>
+        <option value="DEF%">防御%</option>
+        <option value="PEN">穿透值</option>
+        <option value="AP">异常精通</option>
+        <option value="CD">暴击伤害</option>
+        <option value="CR">暴击率</option>
+      </select>
+      <label for="Sub_level4">副属性等级4</label>
+      <select id="Sub_level4" name="Sub_level4">
+        <option value="1">0</option>
+        <option value="2">1</option>
+        <option value="3">2</option>
+        <option value="4">3</option>
+        <option value="5">4</option>
+        <option value="6">5</option>
+      </select><br>
+    </form>
+    <button onclick="generateCommand()">生成命令</button>
+    <textarea id="output" rows="5" cols="80" readonly></textarea>
+    <script>
+      // 属性ID映射表
+      const statIds = {
+        "HP": "11103",
+        "HP%": "11102",
+        "ATK": "12103",
+        "ATK%": "12102",
+        "DEF": "13103",
+        "DEF%": "13102",
+        "PEN": "23203",
+        "PEN%": "23103",
+        "AM": "31402",
+        "AP": "31203",
+        "CD": "21103",  // Crit DMG
+        "CR": "20103",  // Crit Rate
+        "ER": "30502",  // %ER
+        "I": "12202",   // Impact
+        "El": "31803",  // Electro
+        "Et": "31903",  // Ether
+        "Fi": "31603",  // Fire
+        "Ic": "31703",  // Ice
+        "Ph": "31503"   // Physic
+      };
+    
+      // 主属性对应的(*)值映射
+      const mainStatValues = {
+        "HP": 550,
+        "ATK": 750,
+        "DEF": 79,
+        "HP%": 750,
+        "ATK%": 46,
+        "DEF%": 1200,
+        "PEN%": 600,
+        "AM": 750,
+        "AP": 23,
+        "CD": 1200,
+        "CR": 600,
+        "ER": 1500,
+        "I": 450,
+        "El": 750,
+        "Et": 750,
+        "Fi": 750,
+        "Ic": 750,
+        "Ph": 750
+      };
+    
+      // 副属性对应的(-)值映射
+      const subStatValues = {
+        "HP": 112,
+        "ATK": 300,
+        "DEF": 19,
+        "HP%": 300,
+        "ATK%": 15,
+        "DEF%": 480,
+        "PEN": 9,
+        "AP": 9,
+        "CD": 480,
+        "CR": 240
+      };
+    
+      function generateCommand() {
+        // 获取表单值
+        const drive = document.getElementById("drive").value;
+        const driveRarity = document.getElementById("drive_rarity").value;
+        const driveNumber = document.getElementById("drive_number").value;
+        const driveLevel = document.getElementById("drive_level").value;
+        const mainStat = document.getElementById("Main_stat").value;
+        
+        // 获取副属性及其等级
+        const subStats = [];
+        for (let i = 1; i <= 4; i++) {
+          const stat = document.getElementById(`Sub_stat${i}`).value;
+          const level = document.getElementById(`Sub_level${i}`).value;
+          if (stat && level !== "0") {
+            subStats.push({
+              stat: stat,
+              level: level
+            });
+          }
+        }
+    
+        // 构建命令字符串
+        let command = `addequip ${drive}${driveRarity}${driveNumber} ${driveLevel}0 [${statIds[mainStat]} ${mainStatValues[mainStat]} 1`;
+        
+        // 添加副属性
+        subStats.forEach(sub => {
+          command += ` ${statIds[sub.stat]} ${subStatValues[sub.stat]} ${sub.level}`;
+        });
+    
+        command += "]";
+    
+        // 输出到文本框
+        document.getElementById("output").value = command;
+        
+        // 自动选择文本以便复制
+        document.getElementById("output").select();
+        
+        // 尝试执行复制操作
+        try {
+          document.execCommand('copy');
+          alert('命令已复制到剪贴板！');
+        } catch (err) {
+          console.error('无法自动复制:', err);
+        }
+      }
+    </script>
+    <input type="submit" />
+  </body>
+</html>
