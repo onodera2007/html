@@ -187,9 +187,9 @@
         <option value="6">6</option>
       </select>
     </form>
-    <button onclick="generateCommand3()">生成命令</button>
+    <button onclick="generateCommand4()">生成命令</button>
     <script>
-      function generateCommand3(){
+      function generateCommand4(){
         const Avatar = document.getElementById("Avatar").value;
         const AvatarLvUp = document.getElementById("AvatarLvUp").value;
         // 构建命令字符串
@@ -208,6 +208,321 @@
           console.error('无法自动复制:', err);
         }
       }
+    </script>
+    <form>
+      <label for="Avatar1">代理人</label>
+      <select id="Avatar1" name="Avatar1">
+        <option value="1011">Anby</option>
+        <option value="1021">Nekomata</option>
+        <option value="1031">Nicole</option>
+        <option value="1041">Soldier 11</option>
+        <option value="1061">Corin</option>
+        <option value="1071">Caesar</option>
+        <option value="1081">Billy</option>
+        <option value="1091">Miyabi</option>
+        <option value="1101">Koleda</option>
+        <option value="1111">Anton</option>
+        <option value="1121">Ben</option>
+        <option value="1131">Soukaku</option>
+        <option value="1141">Lycaon</option>
+        <option value="1151">Lucy</option>
+        <option value="1161">Lighter</option>
+        <option value="1171">Burnice</option>
+        <option value="1181">Grace</option>
+        <option value="1191">Ellen</option>
+        <option value="1201">Harumasa</option>
+        <option value="1211">Rina</option>
+        <option value="1221">Yanagi</option>
+        <option value="1241">Zhu Yuan</option>
+        <option value="1251">Qingyi</option>
+        <option value="1261">Jane</option>
+        <option value="1271">Seth</option>
+        <option value="1281">Piper</option>
+        <option value="1291">Hugo Vlad</option>
+        <option value="1311">Astra Yao</option>
+        <option value="1321">Evelyn</option>
+        <option value="1331">Vivian</option>
+        <option value="1351">Pulchra</option>
+        <option value="1361">Trigger</option>
+        <option value="1381">Silver Soldier - Anby</option>
+      </select>
+      <label for="AvatarSkillNumber">代理人技能号位</label>
+      <select id="AvatarSkillNumber" name="AvatarSkillNumber">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <label for="AvatarSkilllevel">代理人技能等级</label>
+      <select id="AvatarSkilllevel" name="AvatarSkilllevel">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </form>
+    <button onclick="generateCommand5()">生成命令</button>
+    <script>
+    function generateCommand5(){
+      const Avatar1 = document.getElementById("Avatar1").value;
+      const AvatarSkillNumber = document.getElementById("AvatarSkillNumber").value;
+      const AvatarSkilllevel = document.getElementById("AvatarSkilllevel").value;
+      // 构建命令字符串
+      let command = `AvatarSkillUp ${Avatar1} ${AvatarSkillNumber} ${AvatarSkilllevel}`;
+      // 输出到文本框
+      document.getElementById("output").value = command;
+      
+      // 自动选择文本以便复制
+      document.getElementById("output").select();
+      
+      // 尝试执行复制操作
+      try {
+        document.execCommand('copy');
+        alert('命令已复制到剪贴板！');
+      } catch (err) {
+        console.error('无法自动复制:', err);
+      }
+    }
+    </script>
+    <form>
+      <label for="Avatar3">代理人</label>
+      <select id="Avatar3" name="Avatar3">
+        <option value="1011">Anby</option>
+        <option value="1021">Nekomata</option>
+        <option value="1031">Nicole</option>
+        <option value="1041">Soldier 11</option>
+        <option value="1061">Corin</option>
+        <option value="1071">Caesar</option>
+        <option value="1081">Billy</option>
+        <option value="1091">Miyabi</option>
+        <option value="1101">Koleda</option>
+        <option value="1111">Anton</option>
+        <option value="1121">Ben</option>
+        <option value="1131">Soukaku</option>
+        <option value="1141">Lycaon</option>
+        <option value="1151">Lucy</option>
+        <option value="1161">Lighter</option>
+        <option value="1171">Burnice</option>
+        <option value="1181">Grace</option>
+        <option value="1191">Ellen</option>
+        <option value="1201">Harumasa</option>
+        <option value="1211">Rina</option>
+        <option value="1221">Yanagi</option>
+        <option value="1241">Zhu Yuan</option>
+        <option value="1251">Qingyi</option>
+        <option value="1261">Jane</option>
+        <option value="1271">Seth</option>
+        <option value="1281">Piper</option>
+        <option value="1291">Hugo Vlad</option>
+        <option value="1311">Astra Yao</option>
+        <option value="1321">Evelyn</option>
+        <option value="1331">Vivian</option>
+        <option value="1351">Pulchra</option>
+        <option value="1361">Trigger</option>
+        <option value="1381">Silver Soldier - Anby</option>
+      </select>
+      <label for="AvatarTalentUp">天赋技能等级</label>
+      <select id="AvatarTalentUp" name="AvatarTalentUp">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </form>
+    <button onclick="generateCommand6()">生成命令</button>
+    <script>
+      function generateCommand6(){
+        const Avatar3 = document.getElementById("Avatar3").value;
+        const AvatarTalentUp = document.getElementById("AvatarTalentUp").value;
+        // 构建命令字符串
+        let command = `AvatarTalentUp ${Avatar3} ${AvatarTalentUp}`;
+        // 输出到文本框
+        document.getElementById("output").value = command;
+        
+        // 自动选择文本以便复制
+        document.getElementById("output").select();
+        
+        // 尝试执行复制操作
+        try {
+          document.execCommand('copy');
+          alert('命令已复制到剪贴板！');
+        } catch (err) {
+          console.error('无法自动复制:', err);
+        }
+      }
+      </script>
+    <form>
+      <label for="engine">武器</label>
+      <select id="engine" name="engine">
+        <option value="14102">Steel Cushion</option>
+        <option value="14104">The Brimstone</option>
+        <option value="14107">Tusks of Fury</option>
+        <option value="14109">Hailstorm Shrine</option>
+        <option value="14110">Hellfire Gears</option>
+        <option value="14114">The Restrained</option>
+        <option value="14116">Blazing Laurel</option>
+        <option value="14117">Flamemaker Shaker</option>
+        <option value="14118">Fusion Compiler</option>
+        <option value="14119">Deep Sea Visitor</option>
+        <option value="14120">Zanshin Herb Case</option>
+        <option value="14121">Weeping Cradle</option>
+        <option value="14122">Timeweaver</option>
+        <option value="14124">Riot Suppressor Mark VI</option>
+        <option value="14125">Ice-Jade Teapot</option>
+        <option value="14126">Sharpened Stinger</option>
+        <option value="14129">Item_Weapon_S_1291_Name (Hugo's)</option>
+        <option value="14131">Elegant Vanity</option>
+        <option value="14132">Heartstring Nocturne</option>
+        <option value="14133">Item_Weapon_S_1331_Name (Vivian's)</option>
+        <option value="14136">Spectral Gaze</option>
+        <option value="14138">Severed Innocence</option>
+        <option value="13001">street superstar</option>
+        <option value="13002">slice of time</option>
+        <option value="13003">rainforest gourmet</option>
+        <option value="13004">starlight engine</option>
+        <option value="13005">steamoven</option>
+        <option value="13006">precious fossilized core</option>
+        <option value="13007">original transmorpher</option>
+        <option value="13008">Weeping Gemini</option>
+        <option value="13009">Electro Lip Gloss</option>
+        <option value="13010">Bunny Band</option>
+        <option value="13011">Spring Embrace</option>
+        <option value="13013">Gilded Blossom</option>
+        <option value="13015">Marcato Desire</option>
+        <option value="13101">Demara Batter Mk.II</option>
+        <option value="13103">The Vault</option>
+        <option value="13106">Housekeeper</option>
+        <option value="13108">Starlight engine replica</option>
+        <option value="13111">Drill rig - red axis</option>
+        <option value="13112">Big Cylinder</option>
+        <option value="13113">Bashful Demon</option>
+        <option value="13115">Kaboom The Cannon</option>
+        <option value="13127">Peacekeeper - specialized</option>
+        <option value="13128">Roaring Ride</option>
+        <option value="13135">Box Cutter</option>
+        <option value="14001">Cannon Rotor</option>
+        <option value="14002">Unfettered Game Ball</option>
+        <option value="14003">Six Shooter</option>
+        <option value="12001">[Lunar] Pleniluna</option>
+        <option value="12002">[Lunar] Decrescent</option>
+        <option value="12003">[Lunar] Noviluna</option>
+        <option value="12004">[Reverb] Mark I</option>
+        <option value="12005">[Reverb] Mark II</option>
+        <option value="12006">[Reverb] Mark III</option>
+        <option value="12007">[Vortex] Revolver</option>
+        <option value="12008">[Vortex] Arrow</option>
+        <option value="12009">[Vortex] Hatchet</option>
+        <option value="12010">[Magnetic Storm] Alpha</option>
+        <option value="12011">[Magnetic Storm] Bravo</option>
+        <option value="12012">[Magnetic Storm] Charlie</option>
+        <option value="12013">[Identity] Base</option>
+        <option value="12014">[Identity] Inflection</option>
+      </select>
+      <label for="engine_level">武器等级</label>
+      <select id="engine_level" name="engine_level">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        <option value="32">32</option>
+        <option value="33">33</option>
+        <option value="34">34</option>
+        <option value="35">35</option>
+        <option value="36">36</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+        <option value="44">44</option>
+        <option value="45">45</option>
+        <option value="46">46</option>
+        <option value="47">47</option>
+        <option value="48">48</option>
+        <option value="49">49</option>
+        <option value="50">50</option>
+        <option value="51">51</option>
+        <option value="52">52</option>
+        <option value="53">53</option>
+        <option value="54">54</option>
+        <option value="55">55</option>
+        <option value="56">56</option>
+        <option value="57">57</option>
+        <option value="58">58</option>
+        <option value="59">59</option>
+        <option value="60">60</option>
+      </select>
+      <label for="engine_refine_level">武器refine等级</label>
+      <select id="engine_refine_level" name="engine_refine_level">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </form>
+    <button onclick="generateCommand7()">生成命令</button>
+    <script>
+      function generateCommand7(){
+      const engine = document.getElementById("engine").value;
+      const engine_level = document.getElementById("engine_level").value;
+      const engine_refine_level = document.getElementById("engine_refine_level").value;
+      // 构建命令字符串
+      let command = `AddWeapon ${engine} ${engine_level} 0 ${engine_refine_level}`;
+      // 输出到文本框
+      document.getElementById("output").value = command;
+      
+      // 自动选择文本以便复制
+      document.getElementById("output").select();
+      
+      // 尝试执行复制操作
+      try {
+        document.execCommand('copy');
+        alert('命令已复制到剪贴板！');
+      } catch (err) {
+        console.error('无法自动复制:', err);
+      }
+    }
     </script>
     <form>
       <label for="drive">驱动盘</label>
@@ -385,7 +700,6 @@
       </select><br>
     </form>
     <button onclick="generateCommand()">生成命令</button>
-    <textarea id="output" rows="5" cols="80" readonly></textarea>
     <script>
       // 属性ID映射表
       const statIds = {
@@ -491,6 +805,162 @@
           console.error('无法自动复制:', err);
         }
       }
+    </script>
+    <form>
+      <label for="Avatar4">代理人</label>
+      <select id="Avatar4" name="Avatar4">
+        <option value="1011">Anby</option>
+        <option value="1021">Nekomata</option>
+        <option value="1031">Nicole</option>
+        <option value="1041">Soldier 11</option>
+        <option value="1061">Corin</option>
+        <option value="1071">Caesar</option>
+        <option value="1081">Billy</option>
+        <option value="1091">Miyabi</option>
+        <option value="1101">Koleda</option>
+        <option value="1111">Anton</option>
+        <option value="1121">Ben</option>
+        <option value="1131">Soukaku</option>
+        <option value="1141">Lycaon</option>
+        <option value="1151">Lucy</option>
+        <option value="1161">Lighter</option>
+        <option value="1171">Burnice</option>
+        <option value="1181">Grace</option>
+        <option value="1191">Ellen</option>
+        <option value="1201">Harumasa</option>
+        <option value="1211">Rina</option>
+        <option value="1221">Yanagi</option>
+        <option value="1241">Zhu Yuan</option>
+        <option value="1251">Qingyi</option>
+        <option value="1261">Jane</option>
+        <option value="1271">Seth</option>
+        <option value="1281">Piper</option>
+        <option value="1291">Hugo Vlad</option>
+        <option value="1311">Astra Yao</option>
+        <option value="1321">Evelyn</option>
+        <option value="1331">Vivian</option>
+        <option value="1351">Pulchra</option>
+        <option value="1361">Trigger</option>
+        <option value="1381">Silver Soldier - Anby</option>
+      </select>
+      <label for="AvatarSkin">代理人皮肤</label>
+      <select id="AvatarSkin" name="AvatarSkin">
+        <option value="?">?</option>
+      </select>
+    </form>
+    <button onclick="generateCommand9()">生成命令</button>
+    <script>
+      function generateCommand9(){
+      const Avatar4 = document.getElementById("Avatar4").value;
+      const AvatarSkin = document.getElementById("AvatarSkin").value;
+            // 构建命令字符串
+      let command = `SetAvatarSkin ${Avatar4} ${AvatarSkin}`;
+      // 输出到文本框
+      document.getElementById("output").value = command;
+      
+      // 自动选择文本以便复制
+      document.getElementById("output").select();
+      
+      // 尝试执行复制操作
+      try {
+        document.execCommand('copy');
+        alert('命令已复制到剪贴板！');
+      } catch (err) {
+        console.error('无法自动复制:', err);
+      }
+    }
+    </script>
+    <form>
+      <label for="Avatar5">要控制的代理人</label>
+      <select id="Avatar5" name="Avatar5">
+        <option value="1011">Anby</option>
+        <option value="1021">Nekomata</option>
+        <option value="1031">Nicole</option>
+        <option value="1041">Soldier 11</option>
+        <option value="1061">Corin</option>
+        <option value="1071">Caesar</option>
+        <option value="1081">Billy</option>
+        <option value="1091">Miyabi</option>
+        <option value="1101">Koleda</option>
+        <option value="1111">Anton</option>
+        <option value="1121">Ben</option>
+        <option value="1131">Soukaku</option>
+        <option value="1141">Lycaon</option>
+        <option value="1151">Lucy</option>
+        <option value="1161">Lighter</option>
+        <option value="1171">Burnice</option>
+        <option value="1181">Grace</option>
+        <option value="1191">Ellen</option>
+        <option value="1201">Harumasa</option>
+        <option value="1211">Rina</option>
+        <option value="1221">Yanagi</option>
+        <option value="1241">Zhu Yuan</option>
+        <option value="1251">Qingyi</option>
+        <option value="1261">Jane</option>
+        <option value="1271">Seth</option>
+        <option value="1281">Piper</option>
+        <option value="1291">Hugo Vlad</option>
+        <option value="1311">Astra Yao</option>
+        <option value="1321">Evelyn</option>
+        <option value="1331">Vivian</option>
+        <option value="1351">Pulchra</option>
+        <option value="1361">Trigger</option>
+        <option value="1381">Silver Soldier - Anby</option>
+      </select>
+    </form>
+    <button onclick="generateCommand10()">生成命令</button>
+    <script>
+      function generateCommand10(){
+      const Avatar5 = document.getElementById("Avatar5").value;
+            // 构建命令字符串
+      let command = `SetControlGuiseAvatar ${Avatar5}`;
+      // 输出到文本框
+      document.getElementById("output").value = command;
+      
+      // 自动选择文本以便复制
+      document.getElementById("output").select();
+      
+      // 尝试执行复制操作
+      try {
+        document.execCommand('copy');
+        alert('命令已复制到剪贴板！');
+      } catch (err) {
+        console.error('无法自动复制:', err);
+      }
+    }
+    </script>
+    <form>
+      <label for="section_id">section_id</label>
+      <select id="section_id" name="section_id">
+        <option value="?">?</option>
+      </select>
+      <label for="transform_id">transform_id</label>
+      <select id="transform_id" name="transform_id">
+        <option value="?">?</option>
+      </select>
+    </form>
+    <button onclick="generateCommand11()">生成命令</button>
+    <textarea id="output" rows="5" cols="80" readonly></textarea>
+    <script>
+      function generateCommand11(){
+      const section_id = document.getElementById("section_id").value;
+      const transform_id = document.getElementById("transform_id").value;
+            // 构建命令字符串
+      let command = `Jump ${section_id} ${transform_id}`;
+      // 输出到文本框
+      document.getElementById("output").value = command;
+      
+      // 自动选择文本以便复制
+      document.getElementById("output").select();
+      
+      // 尝试执行复制操作
+      try {
+        document.execCommand('copy');
+        alert('命令已复制到剪贴板！');
+      } catch (err) {
+        console.error('无法自动复制:', err);
+      }
+    }
     </script>
     <form>
       <label for="player_uid">玩家的UID:</label>
