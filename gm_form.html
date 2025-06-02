@@ -1023,6 +1023,29 @@
     }
     </script>
     <form>
+      <label for="AllMission">解锁所有任务</label>
+    </form>
+    <button onclick="generateCommand12()">生成命令</button>
+    <script>
+        function generateCommand12(){
+            // 构建命令字符串
+      let command = `UnlockHollowQuest 0`;
+      // 输出到文本框
+      document.getElementById("output").value = command;
+      
+      // 自动选择文本以便复制
+      document.getElementById("output").select();
+      
+      // 尝试执行复制操作
+      try {
+        document.execCommand('copy');
+        alert('命令已复制到剪贴板！');
+      } catch (err) {
+        console.error('无法自动复制:', err);
+      }
+    }
+    </script>
+    <form>
       <label for="player_uid">玩家的UID:</label>
       <input type="number" id="player_uid" name="player_uid" /><br>
       <label for="token">Token密钥:</label>
