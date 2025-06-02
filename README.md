@@ -4,3 +4,5 @@ vivian-rs\servers\muip-server\res
 后，运行  
 cargo run --bin vivian-muip-server  
 就可以了。  
+[致谢]
+感谢gateslave的汉化和部分代码
