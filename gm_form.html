@@ -1,5 +1,13 @@
 <html>
-  <body>
+  <body style="
+  background-image: url('https://lh4.googleusercontent.com/3OFquj75GlMEQd6LyHnr9f4f1BdwLg7FUw0Xgj1f-x04wKuBMOuXJ7QuYnUG4R2EFLehGKD-8Hwi4wHIK8X7j7iMiJMbE6mOLBuS85c5-oCNskkgWF76Blpl0YwzVZc_=w1280');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+">
     <form>
       <label for="item_id">物品</label>
       <select id="item_id" name="item_id">
@@ -1025,6 +1033,7 @@
       <label for="AllMission">解锁所有任务</label>
     </form>
     <button onclick="generateCommand12()">生成命令</button>
+    <textarea id="output" rows="5" cols="80" readonly></textarea>
     <script>
         function generateCommand12(){
             // 构建命令字符串
@@ -1044,7 +1053,6 @@
       }
     }
     </script>
-    <textarea id="output" rows="5" cols="80" readonly></textarea>
     <form>
       <label for="player_uid">玩家的UID:</label>
       <input type="number" id="player_uid" name="player_uid" /><br>
