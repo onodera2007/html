@@ -3740,11 +3740,12 @@
       </select>
       <label for="AvatarSkillNumber">代理人技能号位</label>
       <select id="AvatarSkillNumber" name="AvatarSkillNumber">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
+        <option value="0">普通攻击</option>
+        <option value="1">特殊技</option>
+        <option value="2">闪避</option>
+        <option value="3">连携技</option>
+        <option value="5">核心技</option>
+        <option value="6">支援技</option>
       </select>
       <label for="AvatarSkilllevel">代理人技能等级</label>
       <select id="AvatarSkilllevel" name="AvatarSkilllevel">
@@ -4007,14 +4008,6 @@
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-            <label for="engine_breakthrough_level">武器突破等级</label>
-      <select id="engine_breakthrough_level" name="engine_breakthrough_level">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
     </form>
     <button onclick="generateCommand7()">生成命令</button>
     <script>
@@ -4022,9 +4015,8 @@
       const engine = document.getElementById("engine").value;
       const engine_level = document.getElementById("engine_level").value;
       const engine_refine_level = document.getElementById("engine_refine_level").value;
-      const engine_breakthrough_level = document.getElementById("engine_breakthrough_level").value;
       // 构建命令字符串
-      let command = `AddWeapon ${engine} ${engine_level} ${engine_breakthrough_level} ${engine_refine_level}`;
+      let command = `AddWeapon ${engine} ${engine_level} 0 ${engine_refine_level}`;
       // 输出到文本框
       document.getElementById("output").value = command;
       
