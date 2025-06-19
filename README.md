@@ -14,5 +14,5 @@ cargo run --bin vivian-muip-server<br>
 [修复]<br>
 修复了漏洞，或者是把排版不规整或者是没有写完的给补完了<br>
 # 致谢
-感谢gobhu提供的汉化和部分代码<br>
+感谢gobhu和Raum提供的汉化和部分代码<br>
 感谢Fvsheng提供的新代码
