@@ -4487,7 +4487,7 @@
     }
     </script>
     <from>
-      <label>重置每日任务</label><br>
+      <label>清空主线任务</label><br>
     </from>
     <button onclick="generateCommand14()">生成命令</button><br>
     <script>
@@ -4520,7 +4520,57 @@
       function generateCommand13(){
       const UnlockBigBossQuest = document.getElementById("UnlockBigBossQuest").value;
       // 构建命令字符串
-      let command = `UnlockBigBossQuest ${UnlockBigBossQuest}`;
+      let command = `UnlockBossBattleQuest ${UnlockBigBossQuest}`;
+      // 输出到文本框
+      document.getElementById("output").value = command;
+      
+      // 自动选择文本以便复制
+      document.getElementById("output").select();
+      
+      // 尝试执行复制操作
+      try {
+        document.execCommand('copy');
+        alert('命令已复制到剪贴板！');
+      } catch (err) {
+        console.error('无法自动复制:', err);
+      }
+    }
+    </script>
+    <form>
+      <label for="UnlockDoubleEliteQuest">深渊上下层</label>
+      <select id="UnlockDoubleEliteQuest" name="UnlockDoubleEliteQuest">
+        <option value="?">?</option>
+      </select><br>
+    </form>
+    <button onclick="generateCommand17()">生成命令</button><br>
+    <script>
+      function generateCommand17(){
+      const UnlockDoubleEliteQuest = document.getElementById("UnlockDoubleEliteQuest").value;
+      // 构建命令字符串
+      let command = `UnlockDoubleEliteQuest ${UnlockDoubleEliteQuest}`;
+      // 输出到文本框
+      document.getElementById("output").value = command;
+      
+      // 自动选择文本以便复制
+      document.getElementById("output").select();
+      
+      // 尝试执行复制操作
+      try {
+        document.execCommand('copy');
+        alert('命令已复制到剪贴板！');
+      } catch (err) {
+        console.error('无法自动复制:', err);
+      }
+    }
+    </script>
+    <form>
+      <label for="ResetSectionState">重置副本</label>
+    </form>
+    <button onclick="generateCommand18()">生成命令</button><br>
+    <script>
+        function generateCommand18(){
+      // 构建命令字符串
+      let command = `ResetSectionState`;
       // 输出到文本框
       document.getElementById("output").value = command;
       
@@ -4545,7 +4595,7 @@
     <button onclick="generateCommand16()">生成命令</button><br>
     <textarea id="output" rows="5" cols="80" readonly></textarea>
     <script>
-      function generateCommand13(){
+      function generateCommand16(){
       const UnlockMonsterCardLevel = document.getElementById("UnlockMonsterCardLevel").value;
       // 构建命令字符串
       let command = `UnlockMonsterCardLevel ${UnlockMonsterCardLevel}`;
