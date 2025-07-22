@@ -1,6 +1,6 @@
 # 如何使用？
 将下载的html文件拖到rs的<br>
-vivian-rs\servers\muip-server\res<br>
+rs\servers\muip-server\res<br>
 后，运行<br>
 cargo run --bin vivian-muip-server<br>
 就可以了。<br>
