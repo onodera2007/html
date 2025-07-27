@@ -113,7 +113,7 @@
         <option value="1411">柚叶</option>
         <option value="1421">潘引壶</option>
         <option value="1441">狛野真斗</option>
-        <option value-"1461">席德</option>
+        <option value="1461">席德</option>
         <option value="2011">哲</option>
         <option value="2021">铃</option>
         <option value="5011">代理人特写·安比</option>
@@ -3444,7 +3444,7 @@
         <option value="134">（测试1）漂流瓶</option>
         <option value="1301">奥菲丝&amp;「鬼火」</option>
         <option value="5301">奥菲丝&amp;「鬼火」</option>
-        <option value="14130">（Test1）鬼火奥菲丝测试音擎</option>
+        <option value="14130">嚣枪喧焰</option>
         <option value="33321">拂晓生花[1]</option>
         <option value="33322">拂晓生花[2]</option>
         <option value="33323">拂晓生花[3]</option>
@@ -3639,7 +3639,7 @@
         <option value="1411">柚叶</option>
         <option value="1421">潘引壶</option>
         <option value="1441">狛野真斗</option>
-        <option value-"1461">席德</option>
+        <option value="1461">席德</option>
       </select>
       <label for="AvatarLvUp">代理人等级</label>
       <select id="AvatarLvUp" name="AvatarLvUp">
@@ -3748,7 +3748,7 @@
         <option value="1411">柚叶</option>
         <option value="1421">潘引壶</option>
         <option value="1441">狛野真斗</option>
-        <option value-"1461">席德</option>
+        <option value="1461">席德</option>
       </select>
       <label for="AvatarSkillNumber">代理人技能号位</label>
       <select id="AvatarSkillNumber" name="AvatarSkillNumber">
@@ -3818,7 +3818,7 @@
         <option value="1411">柚叶</option>
         <option value="1421">潘引壶</option>
         <option value="1441">狛野真斗</option>
-        <option value-"1461">席德</option>
+        <option value="1461">席德</option>
       </select>
       <label for="AvatarTalentUp">影画</label>
       <select id="AvatarTalentUp" name="AvatarTalentUp">
@@ -3851,7 +3851,7 @@
         <option value="14125">玉壶青冰</option>
         <option value="14126">淬锋钳刺</option>
         <option value="14129">千面日陨</option>
-        <option value="14130">（Test1）鬼火奥菲丝测试音擎</option>
+        <option value="14130">嚣枪喧焰</option>
         <option value="14131">玲珑妆匣</option>
         <option value="14132">心弦夜响</option>
         <option value="14133">飞鸟星梦</option>
@@ -4228,7 +4228,7 @@
         <option value="1411">柚叶</option>
         <option value="1421">潘引壶</option>
         <option value="1441">狛野真斗</option>
-        <option value-"1461">席德</option>
+        <option value="1461">席德</option>
       </select>
     </form>
     <button style="margin-top: -13px;" onclick="generateCommand11()">生成命令</button>
@@ -4350,10 +4350,19 @@
       const engine_level = document.getElementById("engine_level").value;
       const engine_refine_level = document.getElementById("engine_refine_level").value;
       // 构建命令字符串
-      let command = `AddWeapon ${engine} ${engine_level} 0 ${engine_refine_level}`;
+      let command = `AddWeapon ${engine} ${engine_level} ${star(engine_level)} ${engine_refine_level}`;
       // 输出到文本框
       document.getElementById("output").value = command;
       copyCommand(command);
+    }
+    function star(level){
+      if (level >= 0 && level <= 10) return 0;//等级上限为10
+      if (level >= 11 && level <= 20) return 1;//等级上限为20
+      if (level >= 21 && level <= 30) return 2;//等级上限为30
+      if (level >= 31 && level <= 40) return 3;//等级上限为40
+      if (level >= 41 && level <= 50) return 4;// 等级上限为50
+      if (level >= 51 && level <= 60) return 5;// 等级上限为60
+      return -1; // 无效等级
     }
     //指令9
     // 属性ID映射表
