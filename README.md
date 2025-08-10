@@ -1,6 +1,6 @@
 # 版本兼容
-html(当前)   -2.2.2</br>
-[html2](https://github.com/onodera2007/html2)    2.2.3-</br>
+html(当前) &nbsp;-2.2.2</br>
+[html2](https://github.com/onodera2007/html2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.2.3-</br>
 # 如何使用？
 将下载的html文件拖到rs的<br>
 rs\servers\muip-server\res<br>
